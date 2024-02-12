@@ -49,9 +49,14 @@ class Planeta:
     pes_newtons = pesPersona * gravetat_planeta
     return pes_newtons
   
-  def planeta_equilibrat(self):
+  def planeta_equilibrat(self, distanciaSol, radiacio):
     """
     DOCUMENTAR
     """
     # ACABAR
-    pass
+    quantitat_aigua = distanciaSol / radiacio
+
+    if quantitat_aigua == 1:
+        return 1  
+    else:
+        return 0
