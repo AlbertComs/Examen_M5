@@ -6,7 +6,12 @@ class PlanetaTest(unittest.TestCase):
     
     def testConversioKelvin(self):
         # assertEquals(expected, actual)
-        pass
+        conversio = planeta(25, 1, 30, 200, 9)
+        conversio.de_celsius_a_kelvin = (25)
+        
+        self.assertEqual(conversio.de_celsius_a_kelvin, 25)
+            
+        
 
     def testPlanetaHabitable(self):
         # assertEquals(expected, actual)
