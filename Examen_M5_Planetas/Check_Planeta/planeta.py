@@ -42,7 +42,7 @@ class Planeta:
     
   def pes_persona_en_newtons(self, pesPersona):
     """
-    DOCUMENTAR
+    Calculara el pes de la persona per el del planeta, despres el retornara amb pes de newtons
     """
     # ACABAR
     gravetat_planeta = 10.5
@@ -51,7 +51,8 @@ class Planeta:
   
   def planeta_equilibrat(self, distanciaSol, radiacio):
     """
-    DOCUMENTAR
+    Lo que fem aqui es que la cantitat d'aigua es la divisio entre distanciaSol y radiacio en format flotant,
+    si la cantitat d'aigua es igual a 1 retornaria "1" de lo contrari retorna "0"
     """
     # ACABAR
     quantitat_aigua = distanciaSol / radiacio
