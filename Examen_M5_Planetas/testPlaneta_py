@@ -3,27 +3,45 @@ import unittest
 from Check_Planeta import planeta
 
 class PlanetaTest(unittest.TestCase):
-    
+    """
+    No funciona, la raro me imagino que es per tema de "temperaturaMitjana" sauria de ficar una altra cosa
+    """
     def testConversioKelvin(self):
         # assertEquals(expected, actual)
         conversio = planeta(25, 1, 30, 200, 9)
-        conversio.de_celsius_a_kelvin = (25)
+        conversio.temperaturaMitjana = ()
         
-        self.assertEqual(conversio.de_celsius_a_kelvin, 25)
-            
-        
-
+        self.assertEqual(conversio.temperaturaMitjana, 273)
+    
+    """
+    No funciona tampoc me imagino que esta mal formatat lo meu
+    """
     def testPlanetaHabitable(self):
         # assertEquals(expected, actual)
+        temperatura = planeta(25, 50, 20)
+        temperatura.temperaturaMitjana = (25)
+        self.assertEqual(temperatura.temperaturaMitjana, 25)
+        # assertEquals(expected, actual)
+        
+        quantitat = planeta(25, 50, 20)
+        quantitat.quantitatAigua = (25)
+        self.assertEqual(temperatura.quantitatAigua, 50)
+        
         # assertEquals(expected, actual)
         # assertEquals(expected, actual)
-        # assertEquals(expected, actual)
-        pass
 
+    """
+        No funciona tampoc me imagino que esta mal formatat lo meu
+    """
     def testCalculPes(self):
         # assertEquals(expected, actual)
-        pass
-
+      Planeta = planeta(25, 50, 15, 10, 100)
+      Resultat = Planeta.pes_persona_en_newtons(10.5)
+      self.assertEqual(Resultat, 262.5)
+        
+    """
+        No funciona, no sabia com ferlo ya
+    """
     def testPlanetaEquilibrat(self):
         # assertEquals(expected, actual)
         # assertEquals(expected, actual)
